@@ -1,0 +1,29 @@
+body {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.127), rgba(0, 0, 0, 0.5)),
+      url("resources/ип.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+.main {
+    display: flex;
+    justify-content: center;
+}
+.div {
+    
+    height: 200vh;
+    border-style: solid;
+    border-top: rgba(0, 0, 0, 0);
+    background-color: rgb(219, 219, 219);
+}
+@media (min-width: 300px){
+    .div{
+        border-width: 2px;
+    }
+}
+@media (min-width: 600px){
+    .div{
+        border-width: 3px;
+    }
+}
