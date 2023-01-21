@@ -1,29 +1,92 @@
 nav{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    position: fixed;
 }
 body {
+    
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.127), rgba(0, 0, 0, 0.5)),
-      url("resources/ип.jpg");
+      url("resources/bg.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
 
 .div {
-    height: 200vh;
+    height: fit-content;
+    padding-bottom: 10%;
     border-style: solid;
     border-top: rgba(0, 0, 0, 0);
     background-color: rgb(219, 219, 219);
 }
+.c-item{
+    
+    height: auto;
+    margin: auto;
+}
+.navbar-text{
+    font-size: 10vw;
+}
+.description{
+    margin-top: 5%; 
+    margin-bottom: 5%;
+    font-size: 1.2vw;
+}
+
 @media (min-width: 300px){
     .div{
         border-width: 2px;
+    }
+    .c-item{
+        width: 100%
+    }
+    .logo{
+        max-width: 15vw;
+        max-height: auto;        
+    }
+    .description{
+        margin-top: 5%; 
+        margin-bottom: 5%;
+        font-size: 4vw;
     }
 }
 @media (min-width: 600px){
     .div{
         border-width: 3px;
+    }
+    .c-item{
+        width: 80%
+    }
+    .logo{
+        max-width: 10vw;
+        max-height: auto;
+        
+    }
+    .description{
+        margin-top: 5%; 
+        margin-bottom: 5%;
+        font-size: 3vw;
+    }
+}
+@media (min-width: 900px){
+    nav{
+        border-bottom-color: white;
+        border-left-color: white;
+        border-right-color: white;
+        border-style: solid;
+        border-width: 2px;
+    }
+    .c-item{
+        width: 70%;
+    }
+    .logo{
+        max-width: 10vw;
+        max-height: auto;   
+    }
+    .description{
+        margin-top: 5%; 
+        margin-bottom: 5%;
+        font-size: 2vw;
     }
 }

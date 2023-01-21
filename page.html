@@ -6,39 +6,47 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body class="container-fluid">
-  <header class="row d-flex justify-content-center">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black col-12 col-md-12 col-lg-10" >
-      <div class="container-fluid" style="margin-left: 5vw;">
-        <a class="navbar-brand fs-2">Brand</a>
+  <header class="row d-flex justify-content-center sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary col-12 col-md-12 col-lg-10 shadow-lg" >
+      <div class="container-fluid">
+        
+        <a class="navbar-brand fs-2 ">
+          <img src="/resources/sample-logo.png" alt="logo img" class="logo">
+          Brand
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarScroll">
+        <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
             <li class="nav-item">
-              <a class="nav-link active fs-4" aria-current="page" href="#">Home</a>
+              <a class="nav-link fs-4" aria-current="page" href="#">
+                Home
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link fs-4" href="#" style="color: white;">item</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link fs-4" href="#"  role="button">
+                item
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Link
               </a>
-              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item bg-dark fs-4">item1</a></li>
-                <li><hr class="dropdown-devider"></li>
-                <li><a class="dropdown-item bg-dark fs-4">item2</a></li>
-                <li><hr class="dropdown-devider"></li>
-                <li><a class="dropdown-item bg-dark fs-4">item3</a></li>
+              <ul class="dropdown-menu bg-secondary " style="border-color: white; border-width: 1px; border-style: solid;" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item fs-4 bg-secondary " style="color: white;">item1</a></li>
+                <li><hr class="dropdown-devider" style="color: white;"></li>
+                <li><a class="dropdown-item fs-4 bg-secondary " style="color: white;">item2</a></li>
+                <li><hr class="dropdown-devider" style="color: white;"></li>
+                <li><a class="dropdown-item fs-4 bg-secondary " style="color: white;">item3</a></li>
               </ul>
             </li>
             <li class="nav-link disabled fs-4" aria-disabled="true">
@@ -54,42 +62,50 @@
     <div class="row d-flex justify-content-center">
       
       <div class="div col-sm-10 col-md-8 container-fluid">
-        <div class="row">
-          <div class="">
-            <div id="carouselOfItems" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="carouselOfItems" data-bs-slide-to="0" class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="carouselOfItems" data-bs-slide-to="1" class="bg-danger" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="carouselOfItems" data-bs-slide-to="2" class="bg-danger" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="carouselOfItems" data-bs-slide-to="3" class="bg-danger" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="carouselOfItems" data-bs-slide-to="4" class="bg-danger" aria-label="Slide 5"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/resources/item1.jpeg" class="img-thumbnail" alt="item1">
-                </div>
-                <div class="carousel-item"></div>
-                  <img src="/resources/item2.jpg" class="d-block img-thumbnail" alt="item2">
-                <div class="carousel-item">
-                    <img src="/resources/item3.jpg" class="d-block img-thumbnail" alt="item3">
-                </div>
-                <div class="carousel-item">
-                  <img src="/resources/item4.png" class="d-block img-thumbnail" alt="item4">
-                </div>
-                <div class="carousel-item">
-                  <img src="/resources/item5.png" class="d-block img-thumbnail" alt="item5">
-                </div>
-              </div>
-              <button class="bg-danger carousel-control-prev" type="button" data-bs-target="carouselOfItems" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="bg-danger carousel-control-next" type="button" data-bs-target="carouselOfItems" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-10 col-md-8 col-lg-8 d-flex justify-content-center flex-column" style="margin-top: 5%;">
+            <h1 class="">Title</h1>
+            <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
+        </div>
+
+
+        <div class="row">
+          <div id="carouselOfItems" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselOfItems" data-bs-slide-to="0" class="active bg-black" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselOfItems" data-bs-slide-to="1" class="bg-black" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselOfItems" data-bs-slide-to="2" class="bg-black" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselOfItems" data-bs-slide-to="3" class="bg-black" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselOfItems" data-bs-slide-to="4" class="bg-black" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img src="/resources/sample.jpg" class="d-block c-item" alt="item1">
+              </div>
+              <div class="carousel-item ">
+                <img src="/resources/sample.jpg" class="d-block c-item" alt="item2">
+              </div>
+              <div class="carousel-item ">
+                <img src="/resources/sample.jpg" class="d-block c-item" alt="item3">
+              </div>
+              <div class="carousel-item ">
+                <img src="/resources/sample.jpg" class="d-block c-item" alt="item4">
+              </div>
+              <div class="carousel-item ">
+                <img src="/resources/sample.jpg" class="d-block c-item" alt="item5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfItems" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-black" style=" border-radius: 10px;" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselOfItems" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-black" style="border-radius: 10px;" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
         </div>
       </div>
       
