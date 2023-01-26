@@ -18,39 +18,44 @@
   <header class="row d-flex justify-content-center sticky-top">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark row shadow-lg position-absolute" >
       <div class="container">
-        <a class="navbar-brand fs-2 col-0 col-md-2">
-          <img src="resources/sample-logo.png" alt="logo img" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <div class="navbar-nav navbar-nav-scroll" id="navbarScrollContainer">
-            <div class="nav-item">
-              <a class="nav-link fs-4" aria-current="page" href="#">
-                Home
-              </a>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link fs-4" href="#"  role="button">
-                item
-              </a>
-            </div>
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Link
-              </a>
-              <div class="dropdown-menu dropdown-menu-dark bg-dark border-0 text-end" aria-labelledby="navbarScrollingDropdown">
-                <div class="dropdown-item fs-4"><a style="color: white;">item1</a></div>
-                <div class="dropdown-item fs-4"><a  style="color: white;">item2</a></div>
-                <div class="dropdown-item fs-4"><a  style="color: white;">item3</a></div>
+        <div class="col-4 col-md-2" style="justify-content: center;">
+          <a class="navbar-brand fs-2 ">
+            <img src="resources/sample-logo.png" alt="logo img" class="logo position-absolute">
+          </a>
+        </div>
+        <div class="col-7 col-md-8 d-flex justify-content-end flex-column">
+          <button class="navbar-toggler col-2" style="align-self: flex-end;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarScroll">
+            <div class="navbar-nav navbar-nav-scroll" id="navbarScrollContainer">
+              <div class="nav-item">
+                <a class="nav-link fs-4" aria-current="page" href="#">
+                  Home
+                </a>
               </div>
-            </div>
-            <div class="nav-link disabled fs-4" aria-disabled="true">
-              Link
+              <div class="nav-item dropdown">
+                <a class="nav-link fs-4" href="#"  role="button">
+                  item
+                </a>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <div class="dropdown-menu dropdown-menu-dark bg-dark border-0 text-end" aria-labelledby="navbarScrollingDropdown">
+                  <div class="dropdown-item fs-4"><a style="color: white;">item1</a></div>
+                  <div class="dropdown-item fs-4"><a  style="color: white;">item2</a></div>
+                  <div class="dropdown-item fs-4"><a  style="color: white;">item3</a></div>
+                </div>
+              </div>
+              <div class="nav-link disabled fs-4" aria-disabled="true">
+                Link
+              </div>
             </div>
           </div>
         </div>
+        
         <div class="col-0 col-md-2"></div>
       </div>
     </nav>
