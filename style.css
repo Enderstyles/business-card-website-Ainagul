@@ -49,6 +49,7 @@ body {
         border-top-width:2px;
         border-top-color:#212529;
     }
+    
     #navbarScrollContainer{
         text-align: end;
         display: flex;
