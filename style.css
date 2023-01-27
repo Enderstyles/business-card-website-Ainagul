@@ -30,10 +30,10 @@ body {
 #mainImg{
     object-fit:cover; 
     height:100vh;
-    color:rgba(0, 0, 0, 0.5);
+    color:rgba(0, 0, 0, 0.7);
     background-size: 100% 100%;
     width: 100%;
-    filter: brightness(70%);
+    filter: brightness(50%);
 }
 .top-left{
     position: absolute;
